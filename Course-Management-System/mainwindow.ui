@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active/>
+    <inactive/>
+    <disabled/>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="wg_welcome_">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,10">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <pointsize>30</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>选择下列一项开始</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::MinimumExpanding</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>71</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_openfile_">
+                <property name="minimumSize">
+                 <size>
+                  <width>250</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-image: url(:/open.jpg);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="autoDefault">
+                 <bool>false</bool>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>71</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_newfile_">
+                <property name="minimumSize">
+                 <size>
+                  <width>250</width>
+                  <height>250</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-image: url(:/new.jpg);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="flat">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>71</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="ListTable" name="wg_table_"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>931</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_remain_"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_helper_"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_reValue_"/>
+   <addaction name="action_save_"/>
+   <addaction name="action_net_"/>
+   <addaction name="action_search_"/>
+   <addaction name="action_sort_"/>
+   <addaction name="action_chart_"/>
+   <addaction name="separator"/>
+   <addaction name="action_insert_"/>
+   <addaction name="action_del_"/>
+  </widget>
+  <action name="actionopen">
+   <property name="text">
+    <string>回到主界面</string>
+   </property>
+  </action>
+  <action name="action_remain_">
+   <property name="text">
+    <string>回到主菜单</string>
+   </property>
+  </action>
+  <action name="action_save_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/save.png</normaloff>:/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="toolTip">
+    <string>保存现在表格文件</string>
+   </property>
+  </action>
+  <action name="action_reValue_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/back.png</normaloff>:/back.png</iconset>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="toolTip">
+    <string>返回未修改模式</string>
+   </property>
+  </action>
+  <action name="action_net_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/cloud.png</normaloff>:/cloud.png</iconset>
+   </property>
+   <property name="text">
+    <string>网络备份</string>
+   </property>
+   <property name="toolTip">
+    <string>链接网络服务器</string>
+   </property>
+  </action>
+  <action name="action_search_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/search.png</normaloff>:/search.png</iconset>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+   <property name="toolTip">
+    <string>模糊搜索</string>
+   </property>
+  </action>
+  <action name="action_sort_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/sort.png</normaloff>:/sort.png</iconset>
+   </property>
+   <property name="text">
+    <string>排序</string>
+   </property>
+   <property name="toolTip">
+    <string>按需求排序</string>
+   </property>
+  </action>
+  <action name="action_insert_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/add.png</normaloff>:/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入新的一行</string>
+   </property>
+  </action>
+  <action name="action_del_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/sub.png</normaloff>:/sub.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除当前行</string>
+   </property>
+  </action>
+  <action name="action_chart_">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icon_small_WeightSlider.png</normaloff>:/icon_small_WeightSlider.png</iconset>
+   </property>
+   <property name="text">
+    <string>统计图表</string>
+   </property>
+  </action>
+  <action name="action_helper_">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListTable</class>
+   <extends>QWidget</extends>
+   <header>listtable.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

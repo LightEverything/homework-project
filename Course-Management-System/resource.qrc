@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>book.jpg</file>
+        <file>new.jpg</file>
+        <file>open.jpg</file>
+        <file>back.png</file>
+        <file>cloud.png</file>
+        <file>save.png</file>
+        <file>search.png</file>
+        <file>sort.png</file>
+        <file>add.png</file>
+        <file>sub.png</file>
+        <file>icon_small_WeightSlider.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1311</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>21</y>
+      <width>921</width>
+      <height>591</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbGetValue">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>580</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确定</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="teDataGet">
+    <property name="geometry">
+     <rect>
+      <x>1003</x>
+      <y>20</y>
+      <width>281</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbClear">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>580</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清除</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1311</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpenFile"/>
+    <addaction name="actionSaveFile"/>
+    <addaction name="actionSavePicture"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionSet"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>算法</string>
+    </property>
+    <addaction name="actionwish"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="actionauthor"/>
+    <addaction name="actioncoffee"/>
+    <addaction name="actionteach"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSet">
+   <property name="text">
+    <string>首选项</string>
+   </property>
+  </action>
+  <action name="actionOpenFile">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actionSaveFile">
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="actionauthor">
+   <property name="text">
+    <string>作者</string>
+   </property>
+  </action>
+  <action name="actioncoffee">
+   <property name="text">
+    <string>coffee</string>
+   </property>
+  </action>
+  <action name="actionwish">
+   <property name="text">
+    <string>先期待一下</string>
+   </property>
+  </action>
+  <action name="actionSavePicture">
+   <property name="text">
+    <string>保存为图片</string>
+   </property>
+  </action>
+  <action name="actionteach">
+   <property name="text">
+    <string>教程</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
